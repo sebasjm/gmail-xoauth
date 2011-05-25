@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <url>http://oauth.net/code/</url>
+
+  <!-- override these ones -->
+  <groupId>ar.com.sebasjm.gmail</groupId>
+  <artifactId>gmail-client</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>Gmail Client</name>
+
+  <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <optimize>true</optimize>
+            <source>1.5</source>
+            <target>1.5</target>
+          </configuration>
+          <inherited>true</inherited>
+        </plugin>
+      </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>oauth</artifactId>
+      <groupId>net.oauth.core</groupId>
+      <version>20100601</version>
+    </dependency>
+    <dependency>
+      <artifactId>mail</artifactId>
+      <groupId>javax.mail</groupId>
+      <version>1.4</version>
+    </dependency>
+  </dependencies>
+</project>
